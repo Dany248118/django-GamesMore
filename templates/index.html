@@ -1,0 +1,930 @@
+{% load static %}
+<!doctype html>
+<html class="" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>GamesMore Games</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="{% static 'img/logo/favicon.png' %}"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+		
+		<!--animate.css-->
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="{% static 'css/bootsnav.css'%}" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		
+	
+		<!--welcome-hero start -->
+		<header id="home" class="welcome-hero">
+
+			<div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+				<!--/.carousel-indicator -->
+				 <ol class="carousel-indicators">
+					<li data-target="#header-carousel" data-slide-to="0" class="active"><span class="small-circle"></span></li>
+					<li data-target="#header-carousel" data-slide-to="1"><span class="small-circle"></span></li>
+					<li data-target="#header-carousel" data-slide-to="2"><span class="small-circle"></span></li>
+				</ol><!-- /ol-->
+				<!--/.carousel-indicator -->
+
+				<!--/.carousel-inner -->
+				<div class="carousel-inner" role="listbox">
+					<!-- .item -->
+					<div class="item active">
+						<div class="single-slide-item slide1">
+							<div class="container">
+								<div class="welcome-hero-content">
+									<div class="row">
+										<div class="col-sm-7">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-txt">
+													<h4>Nuevas ofertas</h4>
+													<h2>Pokemon Escarlata y purpura</h2>
+													<p>
+														Entérate de nuevos detalles sobre Sprigatito, Fuecoco y Quaxly, los tres Pokémon que podrás elegir como primeros compañeros de aventuras, y conoce nuevos Pokémon, ¡incluyendo los Pokémon legendarios Koraidon y Miraidon! 
+													</p>
+													<div class="packages-price">
+														<p>
+															$ 399.00
+															<del>$ 499.00</del>
+														</p>
+													</div>
+													<button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
+														<span class="lnr lnr-plus-circle"></span>
+														add <span>to</span> cart
+													</button>
+													<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='#'">
+														more info
+													</button>
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+										<div class="col-sm-5">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-img">
+													<img src="{% static 'img/slider/slider1.jpg' %}" alt="slider image">
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+									</div><!--/.row-->
+								</div><!--/.welcome-hero-content-->
+							</div><!-- /.container-->
+						</div><!-- /.single-slide-item-->
+
+					</div><!-- /.item .active-->
+
+					<div class="item">
+						<div class="single-slide-item slide2">
+							<div class="container">
+								<div class="welcome-hero-content">
+									<div class="row">
+										<div class="col-sm-7">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-txt">
+													<h4>Nuevas ofertas</h4>
+													<h2>Resident Evil 4</h2>
+													<p>
+														Resident Evil 4, el legendario survival horror de 2005, se renueva completamente en este remake.
+
+Seis años después de los eventos de Resident Evil 2, el sobreviviente de Raccoon City, Leon Kennedy, se encuentra apostado en un recóndito pueblo de Europa para investigar la desaparición de la hija del presidente de los Estados Unidos. 
+													</p>
+													<div class="packages-price">
+														<p>
+															$ 199.00
+															<del>$ 299.00</del>
+														</p>
+													</div>
+													<button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
+														<span class="lnr lnr-plus-circle"></span>
+														add <span>to</span> cart
+													</button>
+													<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='#'">
+														more info
+													</button>
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+										<div class="col-sm-5">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-img">
+													<img src="{% static 'img/slider/slider2.jpg' %}" alt="slider image">
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+									</div><!--/.row-->
+								</div><!--/.welcome-hero-content-->
+							</div><!-- /.container-->
+						</div><!-- /.single-slide-item-->
+
+					</div><!-- /.item .active-->
+
+					<div class="item">
+						<div class="single-slide-item slide3">
+							<div class="container">
+								<div class="welcome-hero-content">
+									<div class="row">
+										<div class="col-sm-7">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-txt">
+													<h4>Nuevas ofertas</h4>
+													<h2>Call of Duty: Modern Warfare 2</h2>
+													<p>
+														Call of Duty®: Modern Warfare® II sumerge a los jugadores en un conflicto mundial sin precedentes que presenta el regreso de los icónicos Operadores de la Fuerza operativa 141. 
+													</p>
+													<div class="packages-price">
+														<p>
+															$ 299.00
+															<del>$ 399.00</del>
+														</p>
+													</div>
+													<button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
+														<span class="lnr lnr-plus-circle"></span>
+														add <span>to</span> cart
+													</button>
+													<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='#'">
+														more info
+													</button>
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+										<div class="col-sm-5">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-img">
+													<img src="{% static 'img/slider/slider3.jpg' %}" alt="slider image">
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+									</div><!--/.row-->
+								</div><!--/.welcome-hero-content-->
+							</div><!-- /.container-->
+						</div><!-- /.single-slide-item-->
+						
+					</div><!-- /.item .active-->
+				</div><!-- /.carousel-inner-->
+
+			</div><!--/#header-carousel-->
+
+			<!-- top-area Start -->
+			<div class="top-area">
+				<div class="header-area">
+					<!-- Start Navigation -->
+				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+				        <!-- Start Top Search -->
+				        <div class="top-search">
+				            <div class="container">
+				                <div class="input-group">
+				                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+				                    <input type="text" class="form-control" placeholder="Search">
+				                    <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+				                </div>
+				            </div>
+				        </div>
+				        <!-- End Top Search -->
+
+				        <div class="container">            
+				            <!-- Start Atribute Navigation -->
+				            <div class="attr-nav">
+				                <ul>
+				                	<li class="search">
+				                		<a href="#"><span class="lnr lnr-magnifier"></span></a>
+				                	</li><!--/.search-->
+				                	<li class="nav-setting">
+				                		<a href="#"><span class="lnr lnr-cog"></span></a>
+				                	</li><!--/.search-->
+				                    <li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+				                            <span class="lnr lnr-cart"></span>
+											<span class="badge badge-bg-1">2</span>
+				                        </a>
+				                        <ul class="dropdown-menu cart-list s-cate">
+				                            <li class="single-cart-list">
+				                                <a href="#" class="photo"><img src="{% static 'img/collection/arrivals1.jpg' %}" class="cart-thumb" alt="image" /></a>
+				                                <div class="cart-list-txt">
+				                                	<h6><a href="#">arm <br> chair</a></h6>
+				                                	<p>1 x - <span class="price">$180.00</span></p>
+				                                </div><!--/.cart-list-txt-->
+				                                <div class="cart-close">
+				                                	<span class="lnr lnr-cross"></span>
+				                                </div><!--/.cart-close-->
+				                            </li><!--/.single-cart-list -->
+				                            <li class="single-cart-list">
+				                                <a href="#" class="photo"><img src="{% static 'img/collection/arrivals2.jpg' %}" class="cart-thumb" alt="image" /></a>
+				                                <div class="cart-list-txt">
+				                                	<h6><a href="#">single <br> armchair</a></h6>
+				                                	<p>1 x - <span class="price">$180.00</span></p>
+				                                </div><!--/.cart-list-txt-->
+				                                <div class="cart-close">
+				                                	<span class="lnr lnr-cross"></span>
+				                                </div><!--/.cart-close-->
+				                            </li><!--/.single-cart-list -->
+				                            <li class="single-cart-list">
+				                                <a href="#" class="photo"><img src="{% static 'img/collection/arrivals3.jpg' %}" class="cart-thumb" alt="image" /></a>
+				                                <div class="cart-list-txt">
+				                                	<h6><a href="#">wooden arn <br> chair</a></h6>
+				                                	<p>1 x - <span class="price">$180.00</span></p>
+				                                </div><!--/.cart-list-txt-->
+				                                <div class="cart-close">
+				                                	<span class="lnr lnr-cross"></span>
+				                                </div><!--/.cart-close-->
+				                            </li><!--/.single-cart-list -->
+				                            <li class="total">
+				                                <span>Total: $0.00</span>
+				                                <button class="btn-cart pull-right" onclick="window.location.href='#'">view cart</button>
+				                            </li>
+				                        </ul>
+				                    </li><!--/.dropdown-->
+				                </ul>
+				            </div><!--/.attr-nav-->
+				            <!-- End Atribute Navigation -->
+
+				            <!-- Start Header Navigation -->
+				            <div class="navbar-header">
+				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+				                    <i class="fa fa-bars"></i>
+				                </button>
+				                <a class="navbar-brand" href="index.html">Games<span>More</span>.</a>
+
+				            </div><!--/.navbar-header-->
+				            <!-- End Header Navigation -->
+
+				            <!-- Collect the nav links, forms, and other content for toggling -->
+				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+				                <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+									
+				                    <li class=" scroll active"><a href="#home">home</a></li>
+									<li class="link"><a href="{%url 'productos'%}">Añadir Juegos</a></li>
+				                    <li class="scroll"><a href="#new-arrivals">Nuevos Juegos</a></li>
+				                    <li class="scroll"><a href="#feature">Juegos Destacados</a></li>
+				                    <li class="scroll"><a href="#blog">Noticias Destacadas</a></li>
+				                    <li class="scroll"><a href="#newsletter">Contacto</a></li>
+				                </ul><!--/.nav -->
+				            </div><!-- /.navbar-collapse -->
+				        </div><!--/.container-->
+				    </nav><!--/nav-->
+				    <!-- End Navigation -->
+				</div><!--/.header-area-->
+			    <div class="clearfix"></div>
+
+			</div><!-- /.top-area-->
+			<!-- top-area End -->
+
+		</header><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--populer-products start -->
+		<section id="populer-products" class="populer-products">
+			<div class="container">
+				<div class="populer-products-content">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="single-populer-products">
+								<div class="single-populer-product-img mt40">
+									<img src="{% static 'img/populer-products/p1.webp' %}" alt="populer-products images">
+								</div>
+								<h2><a href="#">Minecraft</a></h2>
+								<div class="single-populer-products-para">
+									<p>Explora mundos generados al azar y construye cosas increíbles.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="single-populer-products">
+								<div class="single-inner-populer-products">
+									<div class="row">
+										<div class="col-md-4 col-sm-12">
+											<div class="single-inner-populer-product-img">
+												<img src="{% static 'img/populer-products/p2.jpeg' %}" alt="populer-products images">
+											</div>
+										</div>
+										<div class="col-md-8 col-sm-12">
+											<div class="single-inner-populer-product-txt">
+												<h2>
+													<a href="#">
+														EA SPORTS™  <span>FIFA</span> 23
+													</a>
+												</h2>
+												<p>
+													EA SPORTS™ FIFA 23 lleva el juego del mundo al campo con la tecnología HyperMotion2, que ofrece un juego aún más realista
+												</p>
+												<div class="populer-products-price">
+													<h4>Sales Start from <span>$99.00</span></h4>
+												</div>
+												<button class="btn-cart welcome-add-cart populer-products-btn" onclick="window.location.href='#'">
+													Ver mas
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-populer-products">
+								<div class="single-populer-products">
+									<div class="single-populer-product-img">
+										<img src="{% static 'img/populer-products/p3.jpeg' %}" alt="populer-products images">
+									</div>
+									<h2><a href="#">Dead by Daylight</a></h2>
+									<div class="single-populer-products-para">
+										<p>Juego multijugador de terror</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.populer-products-->
+		<!--populer-products end-->
+
+		<!--new-arrivals start -->
+		<section id="new-arrivals" class="new-arrivals">
+			<div class="container">
+				<div class="section-header">
+					<h2>Nuevos Lanzamientos</h2>
+				</div><!--/.section-header-->
+				<div class="new-arrivals-content">
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="{% static 'img/collection/arrivals1.jpg' %}" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="sale bg-1">
+										<p>sale</p>
+									</div>
+									<div class="new-arrival-cart">
+										<p>
+											<span class="lnr lnr-cart"></span>
+											<a href="#">añadir <span>al </span> carrito</a>
+										</p>
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-heart"></span>
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4><a href="#">Mario Kart 8 Deluxe</a></h4>
+								<p class="arrival-product-price">$65.00</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="{% static 'img/collection/arrivals2.jpg' %}" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="sale bg-2">
+										<p>sale</p>
+									</div>
+									<div class="new-arrival-cart">
+										<p>
+											<span class="lnr lnr-cart"></span>
+											<a href="#">add <span>to </span> cart</a>
+										</p>
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-heart"></span>
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4><a href="#">luigi's mansion 3</a></h4>
+								<p class="arrival-product-price">$80.00</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="{% static 'img/collection/arrivals3.jpg' %}" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="new-arrival-cart">
+										<p>
+											<span class="lnr lnr-cart"></span>
+											<a href="#">add <span>to </span> cart</a>
+										</p>
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-heart"></span>
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4><a href="#">Minecraft Legends</legend></a></h4>
+								<p class="arrival-product-price">$40.00</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="{% static 'img/collection/arrivals4.jpg' %}" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="sale bg-1">
+										<p>Oferta</p>
+									</div>
+									<div class="new-arrival-cart">
+										<p>
+											<span class="lnr lnr-cart"></span>
+											<a href="#">añadir <span>al </span> carrito</a>
+										</p>
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-heart"></span>
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4><a href="#">Grand Theft Auto V</a></h4>
+								<p class="arrival-product-price">$100.00</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="{% static 'img/collection/arrivals5.jpg' %}" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="new-arrival-cart">
+										<p>
+											<span class="lnr lnr-cart"></span>
+											<a href="#">añadir <span>al </span> carrito</a>
+										</p>
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-heart"></span>
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4><a href="#">Cyberpunk 2077</a></h4>
+								<p class="arrival-product-price">$120.00</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="{% static 'img/collection/arrivals6.jpg' %}" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="sale bg-1">
+										<p>Oferta</p>
+									</div>
+									<div class="new-arrival-cart">
+										<p>
+											<span class="lnr lnr-cart"></span>
+											<a href="#">añadir <span>al </span> carrito</a>
+										</p>
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-heart"></span>
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4><a href="#">Assassin's Creed Valhalla</a></h4>
+								<p class="arrival-product-price">$140.00</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="{% static 'img/collection/arrivals7.jpg' %}" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="sale bg-2">
+										<p>Oferta</p>
+									</div>
+									<div class="new-arrival-cart">
+										<p>
+											<span class="lnr lnr-cart"></span>
+											<a href="#">añadir <span>al </span> carrito</a>
+										</p>
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-heart"></span>
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4><a href="#">Red Dead Redemption 2</a></h4>
+								<p class="arrival-product-price">$90.00</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4">
+							<div class="single-new-arrival">
+								<div class="single-new-arrival-bg">
+									<img src="{% static 'img/collection/arrivals8.jpg' %}" alt="new-arrivals images">
+									<div class="single-new-arrival-bg-overlay"></div>
+									<div class="new-arrival-cart">
+										<p>
+											<span class="lnr lnr-cart"></span>
+											<a href="#">añadir <span>al </span> carrito</a>
+										</p>
+										<p class="arrival-review pull-right">
+											<span class="lnr lnr-heart"></span>
+											<span class="lnr lnr-frame-expand"></span>
+										</p>
+									</div>
+								</div>
+								<h4><a href="#">The Legend of Zelda Tears of the Kingdom</a></h4>
+								<p class="arrival-product-price">$140.00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+		
+		</section><!--/.new-arrivals-->
+		<!--new-arrivals end -->
+
+		<!--sofa-collection start -->
+		<section id="sofa-collection">
+			<div class="owl-carousel owl-theme" id="collection-carousel">
+				<div class="sofa-collection collectionbg1">
+					<div class="container">
+						<div class="sofa-collection-txt">
+							<h2>Crab Champions</h2>
+							<p>
+								Ábrete camino a través de islas exóticas que combinan movimientos fluidos con combates rápidos para convertirte en un Campeón Cangrejo en este juego de disparos en tercera persona con elementos roguelike. 
+							</p>
+							<div class="sofa-collection-price">
+								<h4>strting from <span>$ 199</span></h4>
+							</div>
+							<button class="btn-cart welcome-add-cart sofa-collection-btn" onclick="window.location.href='#'">
+								Ver mas
+							</button>
+						</div>
+					</div>	
+				</div><!--/.sofa-collection-->
+				<div class="sofa-collection collectionbg2">
+					<div class="container">
+						<div class="sofa-collection-txt">
+							<h2>Sifu</h2>
+							<p>
+								Sifu es un juego de pelea realista en tercera persona con mecánicas de combate de kung-fu y acción de cine de artes marciales, que te llevará por el camino de la venganza. 
+							</p>
+							<div class="sofa-collection-price">
+								<h4>strting from <span>$ 299</span></h4>
+							</div>
+							<button class="btn-cart welcome-add-cart sofa-collection-btn" onclick="window.location.href='#'">
+								Ver mas
+							</button>
+						</div>
+					</div>
+				</div><!--/.sofa-collection-->
+			</div><!--/.collection-carousel-->
+
+		</section><!--/.sofa-collection-->
+		<!--sofa-collection end -->
+
+		<!--feature start -->
+		<section id="feature" class="feature">
+			<div class="container">
+				<div class="section-header">
+					<h2>Juegos destacados</h2>
+				</div><!--/.section-header-->
+				<div class="feature-content">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="single-feature">
+								<img src="{% static 'img/features/f1.jpeg' %}" alt="feature image">
+								<div class="single-feature-txt text-center">
+									<p>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
+										<span class="feature-review">(45 review)</span>
+									</p>
+									<h3><a href="#">Vrising</a></h3>
+									<h5>$160.00</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-feature">
+								<img src="{% static 'img/features/f2.jpg' %}" alt="feature image">
+								<div class="single-feature-txt text-center">
+									<p>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
+										<span class="feature-review">(45 review)</span>
+									</p>
+									<h3><a href="#">Celeste </a></h3>
+									<h5>$200.00</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-feature">
+								<img src="{% static 'img/features/f3.jpeg' %}" alt="feature image">
+								<div class="single-feature-txt text-center">
+									<p>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
+										<span class="feature-review">(45 review)</span>
+									</p>
+									<h3><a href="#">The Witcher 3: Wild Hunt</a></h3>
+									<h5>$100.00</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-feature">
+								<img src="{% static 'img/features/f4.jpg' %}" alt="feature image">
+								<div class="single-feature-txt text-center">
+									<p>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
+										<span class="feature-review">(45 review)</span>
+									</p>
+									<h3><a href="#">disney speedstorm</a></h3>
+									<h5>$299.00</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.feature-->
+		<!--feature end -->
+
+		<!--blog start -->
+		<section id="blog" class="blog">
+			<div class="container">
+				<div class="section-header">
+					<h2>Noticias destacadas</h2>
+				</div><!--/.section-header-->
+				<div class="blog-content">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="single-blog">
+								<div class="single-blog-img">
+									<img src="{% static 'img/blog/b1.jpeg' %}" alt="blog image">
+									<div class="single-blog-img-overlay"></div>
+								</div>
+								<div class="single-blog-txt">
+									<h2><a href="#">Xbox Game Pass abril y mayo de 2023</a></h2>
+									<h3>By <a href="#">Ruben cocoletzi</a> / 20 abril 2023</h3>
+									<p>
+										Xbox Game Pass es un servicio de suscripción en el que los jugadores de Xbox y PC reciben cientos de títulos gratuitos por una cuota mensual. Estos títulos se pueden disfrutar en tu Xbox, PC o móvil y ofrecen desde juegos de aventuras de mundo abierto hasta emocionantes MMO. 
+									</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-sm-4">
+							<div class="single-blog">
+								<div class="single-blog-img">
+									<img src="{% static 'img/blog/b2.webp' %}" alt="blog image">
+									<div class="single-blog-img-overlay"></div>
+								</div>
+								<div class="single-blog-txt">
+									<h2><a href="#">Llega la version 3.6 de Genshin Impact</a></h2>
+									<h3>By <a href="#">Robert Norby</a> / 18th March 2018</h3>
+									<p>
+										La gran ceremonia de erudición, la versión 3.6 de Genshin Impact,  ya está disponible en todas las plataformas: PC, PS5, PS4 y dispositivos móviles Android y iOS. La actualización añade áreas, personajes, dominios, misiones de historia y otros contenidos adicionales. 
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="single-blog">
+								<div class="single-blog-img">
+									<img src="{% static 'img/blog/b3.webp' %}" alt="blog image">
+									<div class="single-blog-img-overlay"></div>
+								</div>
+								<div class="single-blog-txt">
+									<h2><a href="#">Se presenta el contenido DLC para Pokémon Escarlata y purpura</a></h2>
+									<h3>By <a href="#">Robert Norby</a> / 18th March 2018</h3>
+									<p>
+										El DLC Pokémon Escarlata y Violeta se titula El tesoro oculto del Área Cero y se lanzará en dos partes, ambas planeadas para lanzarse en 2023. 
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+			
+		</section><!--/.blog-->
+		<!--blog end -->
+
+		<!-- clients strat -->
+		<section id="clients"  class="clients">
+			<div class="container">
+				<div class="owl-carousel owl-theme" id="client">
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'img/clients/c1.png' %}" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'img/clients/c2.png' %}" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'img/clients/c3.png' %}" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'img/clients/c4.png' %}" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'img/clients/c5.png' %}" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+					</div><!--/.owl-carousel-->
+
+			</div><!--/.container-->
+
+		</section><!--/.clients-->	
+		<!-- clients end -->
+
+		<!--newsletter strat -->
+		<section id="newsletter"  class="newsletter">
+			<div class="container">
+				<div class="hm-footer-details">
+					<div class="row">
+						<div class=" col-md-3 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>information</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-menu">
+									<ul>
+										<li><a href="#">Acerca de Nosotros</a></li><!--/li-->
+										<li><a href="#">Contactanos</a></li><!--/li-->
+										<li><a href="#">Noticias</a></li><!--/li-->
+										<li><a href="#">Tienda</a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-menu-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+						<div class=" col-md-3 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>Plataformas</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-menu">
+									<ul>
+										<li><a href="#">Xbox</a></li><!--/li-->
+										<li><a href="#">Play Station</a></li><!--/li-->
+										<li><a href="#">Nintendo</a></li><!--/li-->
+										<li><a href="#">Steam</a></li><!--/li-->
+										<li><a href="#">Epic Games</a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-menu-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+						<div class=" col-md-3 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>my accounts</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-menu">
+									<ul>
+										<li><a href="#">Mi Cuenta</a></li><!--/li-->
+										<li><a href="#">Lista de Deseos</a></li><!--/li-->
+										<li><a href="#">Comunidad</a></li><!--/li-->
+										<li><a href="#">Noticias</a></li><!--/li-->
+										<li><a href="#">Carrito</a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-menu-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+						<div class=" col-md-3 col-sm-6  col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>newsletter</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-para">
+									<p>
+										Subscribete para tener las ultimas noticias.
+									</p>
+								</div><!--/.hm-foot-para-->
+								<div class="hm-foot-email">
+									<div class="foot-email-box">
+										<input type="text" class="form-control" placeholder="Escribe tu correo....">
+									</div><!--/.foot-email-box-->
+									<div class="foot-email-subscribe">
+										<span><i class="fa fa-location-arrow"></i></span>
+									</div><!--/.foot-email-icon-->
+								</div><!--/.hm-foot-email-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.hm-footer-details-->
+
+			</div><!--/.container-->
+
+		</section><!--/newsletter-->	
+		<!--newsletter end -->
+
+		<!--footer start-->
+		<footer id="footer"  class="footer">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<div class="footer-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>	
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+						<a href="#"><i class="fa fa-behance"></i></a>	
+					</div>
+					<p>
+						&copy;copyright. designed and developed by <a href="https://www.themesine.com/">themesine</a>
+					</p><!--/p-->
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-->
+		<!--footer end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="{% static 'js/jquery.js' %}"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+		
+		<!-- bootsnav js -->
+		<script src="{% static 'js/bootsnav.js' %}"></script>
+
+		<!--owl.carousel.js-->
+        <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		
+        
+        <!--Custom JS-->
+        <script src="{% static 'js/custom.js' %}"></script>
+        
+    </body>
+	
+</html>

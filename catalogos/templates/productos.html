@@ -1,0 +1,84 @@
+{% extends 'AdminBase.html' %}
+
+{% block titulo %}Productos{% endblock %}
+
+{% block contenido %} 
+ 
+    <h1>Todos los Productos</h1>
+
+        {% if messages %}
+          <div class="messages">
+            {% for message in messages %}
+              {% if 'error' in message.tags or 'warning' in message.tags %}
+                <div class="alert alert-danger" role="alert">{{ message }}</div>
+              {% elif 'success' in message.tags %}
+                <div class="alert alert-info" role="alert">{{ message }}</div>
+              {% else %}
+                <div class="alert" role="alert">{{ message }}</div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+    <table class="table">
+      <thead>
+        <tr>
+          <td style = "text-align: center;">ID</td>
+          <td style = "text-align: center;">Nombre</td>
+          <td style = "text-align: center;">Categoria</td>
+          <td style = "text-align: center;">Descripcion</td>
+          <td style = "text-align: center;">Existencias</td>
+          <td style = "text-align: center;">Precio en MXN</td>
+          <td style = "text-align: center;">Acciones</td>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in productos %}
+        <tr>
+          <td style = "text-align: center;">{{item.idjuego}}</td>
+          <td style = "text-align: center;">{{item.nombre}}</td>
+          <td style = "text-align: center;">{{item.categoria}}</td>
+          <td style = "text-align: center;">{{item.descripcion}}</td>
+          <td style = "text-align: center;">{{item.existencias}}</td>
+          <td style = "text-align: center;">{{item.precio}}</td>
+          <td> 
+            <a href= "{% url 'productosEditar' pk=item.id %}" class= "btn btn-success" type="button">Editar</a>
+            <a href = "{% url 'productosEliminar' pk=item.id %}"class="btn btn-danger" type="submit">Eliminar</a> 
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>   
+
+    <a href="{% url 'productosCrear' %}" class="btn btn-success" role="button"> Crear Nuevo </a>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+    {%  if messages %}
+      {% for message in messages %}
+        <script>
+          {% if 'error' in message.tags or 'warning' in message.tags %}
+              Swal.fire({
+                "title": "Se ha eliminado",
+                "text" : "{{ message }}",
+                "icon" : "error"
+              })
+          {% elif 'success' in message.tags %}    
+            Swal.fire({
+              "title": "Felicidades",
+              "text" : "{{ message }}",
+              "icon" : "success"
+            })
+          {% else %}
+              Swal.fire({
+                "title": "Información Importante",
+                "text" : "{{ message }}",
+                "icon" : "warning"
+              })
+        {% endif %}
+
+       </script>
+      {% endfor %}
+    {% endif %}
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{% endblock %}
